@@ -59,8 +59,6 @@
 	                            <input class="btn btn-success btn-block" type="submit" value="Войти">
 	                        </fieldset>
 	                    </form>
-	                    <div class="row" style="height: 16px;"></div>
-	                    <a href="sign_up.php" class="btn btn-warning btn-block">Зарегистрироваться</a>
 	                </div>
 	            </div>
 	        </div>

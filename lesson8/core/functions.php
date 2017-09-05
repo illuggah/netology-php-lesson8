@@ -48,18 +48,17 @@ function getUser($login) {
 			$not_exist = false;
 			$_SESSION['is_guest'] = false;
 			return $user;
-			return $not_exist;
 		}
-		if (not_exist) {
-			$user = [
-						'id' => 'guest',
-						'login' => 'guest',
-						'password' => '',
-						'username' => $_POST['login']];
+	}
+	if ($not_exist && !empty($_POST['login'])) {
+		$user = [
+				'id' => 'guest',
+				'login' => $_POST['login'],
+				'password' => '',
+				'username' => $_POST['login']];
 
-			$_SESSION['is_guest'] = true;
-			return $user;
-		}
+		$_SESSION['is_guest'] = true;
+		return $user;
 	}
 	return null;
 }

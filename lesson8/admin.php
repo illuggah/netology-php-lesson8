@@ -45,12 +45,6 @@
 		<h2 style="text-align: center;">Здесь вы можете загрузить JSON файл теста</h2><br><br>
 		<form enctype="multipart/form-data" method="POST" action="upload_handler.php" class="form-horizontal">
 			<div class="form-group">
-				<label for="fio" class="control-label col-md-4 col-sm-4">ФИО: </label>
-				<div class="col-md-4 col-sm-4">
-					<input name="fio" type="text" placeholder="Введите ФИО" class="form-control" size="50">
-				</div>
-			</div>
-			<div class="form-group">
 				<label for="userfile" class="control-label col-md-4 col-sm-4">Файл теста: </label>
 				<div class="col-md-4 col-sm-4">
 					<input name="userfile" type="file" />
